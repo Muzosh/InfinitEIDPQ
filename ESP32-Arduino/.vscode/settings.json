@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.log": "json",
+        "*.module": "php",
+        "fips202.h": "c",
+        "symmetric.h": "c",
+        "params.h": "c",
+        "stdint.h": "c"
+    }
+}

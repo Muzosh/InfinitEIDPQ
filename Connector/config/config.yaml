@@ -1,0 +1,12 @@
+SERIAL_BAUDRATE: 115200
+
+CARD_CERT_VALIDITY_DAYS: 90
+ROOT_CA_DIRECTORY_FULL_PATH: "../data"
+
+# PIN values are integers here, but
+# are translated and saved to device as string/ASCII values
+ADMIN_PIN: [9, 8, 7, 6, 5, 4]
+
+NEXTCLOUD_ID: "testuser"
+USER_AUTH_PIN: [1, 2, 3, 4, 5, 6]
+USER_SIGN_PIN: [1, 2, 3, 4, 5, 6]
