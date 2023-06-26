@@ -1,8 +1,8 @@
 {
 	"folders": [
 		{
-			"name": "ESP32-Arduino",
-			"path": "ESP32-Arduino"
+			"name": "InfinitEIDPQ",
+			"path": "InfinitEIDPQ"
 		},
 		{
 			"path": "Connector"
