@@ -2,13 +2,10 @@
 	"folders": [
 		{
 			"name": "InfinitEIDPQ",
-			"path": "InfinitEIDPQ"
+			"path": "InfinitEIDPQ-applet"
 		},
 		{
 			"path": "Connector"
-		},
-		{
-			"path": "."
 		}
 	],
 	"settings": {
