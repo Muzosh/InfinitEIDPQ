@@ -1,7 +1,7 @@
 #!python
 
-from pqconnector.connector import connect
-from pqconnector.init_device import init_device
+from infiniteidpq_device_manager.connector import connect
+from infiniteidpq_device_manager.init_device import init_device
 
 ADMIN_PIN_SET = 0
 RESET = 0

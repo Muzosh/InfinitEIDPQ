@@ -1,8 +1,8 @@
 import serial
 import time, os
-from pqconnector.connector import connect, send_and_receive, choose_serial_port
-from pqconnector import CONFIG, CONSTANTS as C
-from pqconnector.util import build_command, get_status
+from infiniteidpq_device_manager.connector import connect, send_and_receive, choose_serial_port
+from infiniteidpq_device_manager import CONFIG, CONSTANTS as C
+from infiniteidpq_device_manager.util import build_command, get_status
 
 ser = serial.Serial(
     port=None,

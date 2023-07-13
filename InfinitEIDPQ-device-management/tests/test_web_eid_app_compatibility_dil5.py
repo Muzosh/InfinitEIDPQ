@@ -26,12 +26,12 @@ from hashlib import sha512
 import pytest
 import serial
 from asn1crypto import pem, x509
-from pqconnector.oqspython import oqspython
+from infiniteidpq_device_manager.oqspython import oqspython
 
-from pqconnector import CONFIG
-from pqconnector import CONSTANTS as C
-from pqconnector.connector import connect, send_and_receive
-from pqconnector.util import (
+from infiniteidpq_device_manager import CONFIG
+from infiniteidpq_device_manager import CONSTANTS as C
+from infiniteidpq_device_manager.connector import connect, send_and_receive
+from infiniteidpq_device_manager.util import (
     build_command,
     change_pin,
     get_certificate,

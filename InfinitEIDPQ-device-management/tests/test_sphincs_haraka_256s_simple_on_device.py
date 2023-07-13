@@ -1,7 +1,7 @@
-# from pqc_connector.oqspython import oqspython
-from pqconnector.oqspython import oqspython
-from pqconnector.connector import connect
-from pqconnector.util import send_and_receive, verify_pin
+# from infiniteidpq_device_manager.oqspython import oqspython
+from infiniteidpq_device_manager.oqspython import oqspython
+from infiniteidpq_device_manager.connector import connect
+from infiniteidpq_device_manager.util import send_and_receive, verify_pin
 
 # Set the serial port name and baud rate
 ser = connect()

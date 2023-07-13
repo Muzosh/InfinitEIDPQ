@@ -3,7 +3,7 @@ from hashlib import sha512
 
 from asn1crypto import x509
 
-from pqconnector.oqspython import oqspython
+from infiniteidpq_device_manager.oqspython import oqspython
 
 # Set the serial port name and baud rate
 oqs = oqspython.OQS_SIGNATURE(oqspython.OQS_SIG_alg_dilithium_5)

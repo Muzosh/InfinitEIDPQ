@@ -1,5 +1,5 @@
 from hashlib import sha512
-from pqconnector.oqspython import oqspython
+from infiniteidpq_device_manager.oqspython import oqspython
 
 # Set the serial port name and baud rate
 oqs = oqspython.OQS_SIGNATURE(oqspython.OQS_SIG_alg_sphincs_sha256_256s_simple)

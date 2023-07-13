@@ -5,20 +5,20 @@ import pathlib
 import time
 from hashlib import sha512
 
-from pqconnector import CONFIG, CONSTANTS as C
-from pqconnector.connector import connect, send_and_receive
-from pqconnector.oqspython.oqspython import (
+from infiniteidpq_device_manager import CONFIG, CONSTANTS as C
+from infiniteidpq_device_manager.connector import connect, send_and_receive
+from infiniteidpq_device_manager.oqspython.oqspython import (
     OQS_SIGNATURE,
-    OQS_SIG_alg_falcon_1024,
+    OQS_SIG_alg_dilithium_5,
 )
-from pqconnector.util import build_command, verify_pin
+from infiniteidpq_device_manager.util import build_command, verify_pin
 
 ITERATIONS = 100
 SERIAL = connect()
 ORIGIN = "https://example.com"
 MODE_AUTH = C["MODE_AUTH"]
-ALG_DILITHIUM5 = C["OQS_SIG_alg_falcon_1024"]
-SIGNATURE_LENGTH = OQS_SIGNATURE(OQS_SIG_alg_falcon_1024).length_signature
+ALG_DILITHIUM5 = C["OQS_SIG_alg_dilithium_5"]
+SIGNATURE_LENGTH = OQS_SIGNATURE(OQS_SIG_alg_dilithium_5).length_signature
 
 measurement_directory = (
     pathlib.Path(__file__).parent.absolute() / "measurements"
@@ -61,7 +61,7 @@ final_string = f"Average: {duration_sum / ITERATIONS}\n" + final_string
 final_string = final_string.replace(".", ",")
 
 measurement_file = (
-    measurement_directory / f"TDisplay_falc1024_{ITERATIONS}_{int(time.time())}.txt"
+    measurement_directory / f"TDisplay_dil5_{ITERATIONS}_{int(time.time())}.txt"
 )
 measurement_file.write_text(final_string)
 print(f"[>] Measurement file saved to: {measurement_file}")

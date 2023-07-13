@@ -7,7 +7,7 @@ from asn1crypto import core, keys, pem, x509, algos
 
 from . import CONFIG
 from . import CONSTANTS as C
-from .connector import connect, send_and_receive
+from .infiniteidpq_device_manager import connect, send_and_receive
 from .oqspython import oqspython
 
 

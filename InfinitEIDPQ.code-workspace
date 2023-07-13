@@ -1,11 +1,13 @@
 {
 	"folders": [
 		{
-			"name": "InfinitEIDPQ",
 			"path": "InfinitEIDPQ-applet"
 		},
 		{
-			"path": "Connector"
+			"path": "InfinitEIDPQ-device-management"
+		},
+		{
+			"path": "pkcs11"
 		}
 	],
 	"settings": {

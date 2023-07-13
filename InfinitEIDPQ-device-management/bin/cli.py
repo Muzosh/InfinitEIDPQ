@@ -6,12 +6,12 @@ from asn1crypto import keys, x509
 from asn1crypto.pem import armor
 from simple_term_menu import TerminalMenu
 
-from pqconnector import CONFIG
-from pqconnector import CONSTANTS as C
-from pqconnector.connector import connect, send_and_receive
-from pqconnector.init_device import init_device
-from pqconnector.oqspython import oqspython
-from pqconnector.util import (
+from infiniteidpq_device_manager import CONFIG
+from infiniteidpq_device_manager import CONSTANTS as C
+from infiniteidpq_device_manager.connector import connect, send_and_receive
+from infiniteidpq_device_manager.init_device import init_device
+from infiniteidpq_device_manager.oqspython import oqspython
+from infiniteidpq_device_manager.util import (
     build_command,
     clear_screen,
     get_certificate,
@@ -394,7 +394,7 @@ def run_command_menu():
 
 
 def mainmenu():
-    main_menu_title = "#" * 20 + " PQC-Connector " + "#" * 20
+    main_menu_title = "#" * 20 + " InfinitEIDPQ-device-manager " + "#" * 20
     main_menu_items = [
         "[i] Initialize currently connected device",
         "[p] Obtain public key from device",
