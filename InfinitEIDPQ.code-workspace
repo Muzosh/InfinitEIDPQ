@@ -95,7 +95,9 @@
 			"iterator": "cpp",
 			"utility": "cpp",
 			"*.tcc": "cpp",
-			"cinttypes": "cpp"
+			"cinttypes": "cpp",
+			"infiniteidpq-pkcs11.h": "c",
+			"pkcs11.h": "c"
 		}
 	}
 }
